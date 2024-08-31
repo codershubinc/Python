@@ -5,8 +5,7 @@ username = 'swap'
 print(username)
 username = 'ing'
 print(username)
-print("isalnum" ,  username.isalnum())
-print( "endswith p" , username.endswith('p'))
+print("isalnum",  username.isalnum())
+print("endswith p", username.endswith('p'))
 
-print( (1==1)+1) #2
- 
+print((1 == 1)+1)  # 2
