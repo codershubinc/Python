@@ -6,6 +6,6 @@ data = fetch_data(url)
 
 
 gen_data(
-    100000,
+    100,
     data
 )
