@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-'''
+''' comment starts here
 dic = {
     'Name': ['a','c','b','d','a'],
     'Gender': ['M','M','F','F','M'],
@@ -29,6 +29,7 @@ print(grouped_df['Score'].agg(np.size))
 print(grouped_df['Score'].agg(np.sum))
 print(grouped_df['Score'].agg( [np.mean , np.std]).rename( columns={'mean':'mean_score', 'std':'std_score'}))
 
+comments end here
 '''
 
 data = {
