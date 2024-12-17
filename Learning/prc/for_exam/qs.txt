@@ -1,0 +1,245 @@
+'''
+Practice Questions 
+
+Topic#1: Pandas Series and DataFrame 
+
+ 
+
+Q1. Create a Pandas Series from a list of integers [10, 20, 30, 40, 50] and assign it to a variable s. 
+
+Change the index of the Series to ['a', 'b', 'c', 'd', 'e']. 
+
+Retrieve the element at index 'c'. 
+
+Calculate the sum of all elements in the Series. 
+
+Print the updated Series and the sum. 
+
+ 
+
+Q2. Create a Pandas Series from a dictionary {'A': 5, 'B': 10, 'C': 15, 'D': 20, 'E': 25}. 
+
+Add 5 to each element in the Series. 
+
+Find the maximum value in the Series. 
+
+Filter and display only the elements that are greater than 15. 
+
+Print the final Series and the maximum value. 
+
+ 
+
+Q3. Create a Pandas DataFrame from the following data: 
+
+“data = {'Product': ['A', 'B', 'C', 'D'], 'Price': [100, 150, 200, 250], 'Quantity': [10, 15, 20, 25]}” 
+
+Assign the DataFrame to a variable df. 
+
+Calculate the total sales for each product (Price * Quantity) and add it as a new column TotalSales. 
+
+Find the product with the highest total sales. 
+
+Display the DataFrame sorted by TotalSales in descending order. 
+
+Print the updated DataFrame and the product with the highest total sales. 
+
+ 
+
+Q4. Create a Pandas DataFrame from the following data: 
+
+“data = {'CustomerID': [1, 2, 3, 4, 5], 'Purchase': [250, None, 150, 300, None]}” 
+
+Assign the DataFrame to a variable df. 
+
+Replace the missing values in the Purchase column with the average value of the column. 
+
+Group the DataFrame by CustomerID and calculate the total purchase amount for each customer. 
+
+Print the cleaned DataFrame and the grouped DataFrame with total purchase amounts. 
+
+ 
+
+Topic#2: Pandas Grouping and Aggregating 
+
+ 
+
+Q5. Create a DataFrame df with the following data: 
+
+“data = {'Category': ['A', 'B', 'A', 'B', 'A'], 'Values': [10, 20, 30, 40, 50]}” 
+
+“df = pd.DataFrame(data)” 
+
+Group the data by the 'Category' column. 
+
+Calculate the sum of 'Values' for each category. 
+
+Print the resulting grouped DataFrame. 
+
+ 
+
+Q6. Create a DataFrame df with the following data: 
+
+“data = {'Product': ['X', 'Y', 'X', 'Y', 'X'], 'Sales': [200, 150, 250, 300, 100]}” 
+
+“df = pd.DataFrame(data)” 
+
+Group the data by the 'Product' column. 
+
+Apply multiple aggregation functions (mean, sum, and count) to the 'Sales' column. 
+
+Print the resulting aggregated DataFrame. 
+
+ 
+
+Q7. Create a DataFrame df with the following data: 
+
+“data = {'Department': ['HR', 'IT', 'HR', 'IT', 'HR'], 'Salary': [50000, 70000, 60000, 80000, 55000]}” 
+
+“df = pd.DataFrame(data)” 
+
+Group the data by the 'Department' column. 
+
+Define a custom aggregation function that calculates the range (max - min) of the 'Salary' column for each department. 
+
+Apply the custom aggregation function and print the resulting DataFrame. 
+
+ 
+
+Q8. Create a DataFrame df with the following data: 
+
+“data = {'Region': ['North', 'South', 'North', 'South', 'North'], 'Product': ['A', 'A', 'B', 'B', 'A'], 'Sales': [100, 150, 200, 250, 300]}” 
+
+“df = pd.DataFrame(data)” 
+
+Group the data by both 'Region' and 'Product' columns. 
+
+Calculate the total sales for each group. 
+
+Print the resulting grouped DataFrame. 
+
+ 
+
+Topic#3: Pandas Merging and Joining 
+
+ 
+
+Q9. Create two DataFrames df1 and df2 with the following data: 
+
+DataFrame 1: 
+
+“data1 = {'ID': [1, 2, 3, 4], 'Name': ['Alice', 'Bob', 'Charlie', 'David']}” 
+
+“df1 = pd.DataFrame(data1)” 
+
+DataFrame 2: 
+
+“data2 = {'ID': [3, 4, 5, 6], 'Score': [85, 90, 75, 80]}” 
+
+“df2 = pd.DataFrame(data2)” 
+
+Perform an inner join on df1 and df2 using the 'ID' column. 
+
+Print the resulting DataFrame. 
+
+ 
+
+Q10. Create two DataFrames df1 and df2 with the following data: 
+
+DataFrame 1: 
+
+“data1 = {'EmployeeID': [101, 102, 103, 104], 'EmployeeName': ['John', 'Jane', 'Jim', 'Jack']}” 
+
+“df1 = pd.DataFrame(data1)” 
+
+DataFrame 2” 
+
+“data2 = {'EmployeeID': [103, 104, 105, 106], 'Department': ['HR', 'IT', 'Finance', 'Marketing']}” 
+
+“df2 = pd.DataFrame(data2)” 
+
+Perform a left join on df1 and df2 using the 'EmployeeID' column. 
+
+Print the resulting DataFrame. 
+
+ 
+
+Q11. Create two DataFrames df1 and df2 with the following data: 
+
+DataFrame 1:  
+
+“data1 = {'StudentID': [201, 202, 203, 204], 'StudentName': ['Sam', 'Sara', 'Sue', 'Scott']} 
+
+“df1 = pd.DataFrame(data1)” 
+
+DataFrame 2: 
+
+“data2 = {'StudentID': [202, 204, 205, 206], 'Grade': ['A', 'B', 'C', 'D']}” 
+
+“df2 = pd.DataFrame(data2)” 
+
+Perform a right join on df1 and df2 using the 'StudentID' column. 
+
+Print the resulting DataFrame. 
+
+ 
+
+Q12. Create two DataFrames df1 and df2 with the following data: 
+
+DataFrame 1: 
+
+“data1 = {'OrderID': [301, 302, 303], 'Product': ['Laptop', 'Tablet', 'Smartphone']}” 
+
+“df1 = pd.DataFrame(data1)” 
+
+DataFrame 2: 
+
+“data2 = {'OrderID': [302, 304, 305], 'Quantity': [3, 2, 5]}” 
+
+“df2 = pd.DataFrame(data2)” 
+
+ 
+
+Perform an outer join on df1 and df2 using the 'OrderID' column. 
+
+Print the resulting DataFrame. 
+
+ 
+
+Q13. Create two DataFrames df1 and df2 with the following data: 
+
+DataFrame 1:  
+
+“data1 = {'FirstName': ['Tom', 'Jerry', 'Mickey', 'Donald'], 'LastName': ['Smith', 'Brown', 'Mouse', 'Duck'],'Age': [25, 30, 35, 40]}” 
+
+“df1 = pd.DataFrame(data1)” 
+
+DataFrame 2: 
+
+“data2 = {'FirstName': ['Jerry', 'Mickey', 'Tom', 'Donald'], 'LastName': ['Brown', 'Mouse', 'Smith', 'Duck'], 'Salary': [70000, 60000, 50000, 80000]}” 
+
+“df2 = pd.DataFrame(data2)” 
+
+Merge df1 and df2 on both 'FirstName' and 'LastName' columns. 
+
+Print the resulting DataFrame. 
+
+ 
+
+Topic#4: Error Handling 
+
+ 
+
+Q14. Write a Python function divide(a, b) that takes two arguments a and b and returns the result of dividing a by b. 
+
+Implement error handling to manage the case when b is zero, and display an appropriate error message. 
+
+Test the function with different values of a and b (including zero). 
+
+ 
+
+Q15. Write a Python function get_integer_input() that prompts the user to enter an integer. 
+
+Implement error handling to manage the case when the user enters a non-integer value, and prompt the user to enter a valid integer until they do so. 
+
+Test the
+'''

@@ -1,7 +1,6 @@
 a = 0
-b =  self
-# TODO : implement error handling
-
+self = 9
+b =  self * self
 try:
     print(a+b)
 except ZeroDivisionError as e :
@@ -14,6 +13,3 @@ except:
     print("error")
 finally:
     print("cleaning up")
-
-
- 
