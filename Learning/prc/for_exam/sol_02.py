@@ -11,12 +11,14 @@ Print the final Series and the maximum value.
 
 """
 
-import pandas as pd
+import pandas as pd #type: ignore
 
 s = pd.Series({'A': 5, 'B': 10, 'C': 15, 'D': 20, 'E': 25})
 s = s + 5
 
-print( 'Updated series is \n ' ,  s[s > 15])
+print( 'Updated series is \n' ,  s)
+
+print('Elements greater than 15 are \n' , s[s>15])
 
 print('Maximum value is ' , s.max())
 

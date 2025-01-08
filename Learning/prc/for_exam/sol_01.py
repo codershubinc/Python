@@ -10,11 +10,13 @@ Calculate the sum of all elements in the Series.
 Print the updated Series and the sum. 
 '''
 
-import pandas as pd
+import pandas as pd  #type: ignore
+
 
 
 s = pd.Series([10, 20, 30, 40, 50])
 s.index = ['a', 'b', 'c', 'd', 'e']
+
 print( 'The element at index c is' ,  s['c']) 
 print('Sum of the series is ' , s.sum())
 print( 'Updated series is ' , s)
