@@ -1,0 +1,94 @@
+
+Docker Learning Plan (Beginner to Intermediate)
+
+## 🔰 Week 1: Introduction & Setup
+✅ Goals:
+- Understand what Docker is and why it’s used.
+- Set up Docker on your system.
+
+📚 Topics:
+- What is Docker? Containers vs Virtual Machines.
+- Docker architecture: Engine, Images, Containers, Registries.
+- Install Docker & Docker Desktop (or CLI on Linux).
+- Basic Docker commands.
+
+🔧 Practice:
+docker --version
+docker run hello-world
+docker ps
+docker images
+
+🎯 Task:
+- Run your first container: nginx, alpine, ubuntu.
+- Explore DockerHub.
+
+## 🧱 Week 2: Working with Images & Containers
+✅ Goals:
+- Learn how to use and build your own Docker images.
+
+📚 Topics:
+- Dockerfile syntax & best practices.
+- Image layers and caching.
+- Copying files, setting environment variables, working directory.
+
+🔧 Practice:
+- Create a Dockerfile for a simple Node.js or Python app.
+- Build, tag, and run your custom image:
+docker build -t myapp .
+docker run -p 3000:3000 myapp
+
+🎯 Task:
+- Create a basic REST API and dockerize it.
+- Push the image to DockerHub.
+
+## ⚙️ Week 3: Volumes, Networking & Compose
+✅ Goals:
+- Learn how Docker handles storage, networking, and orchestration.
+
+📚 Topics:
+- Volumes vs Bind Mounts.
+- Container Networking (bridge, host, custom networks).
+- Docker Compose for multi-container apps.
+
+🔧 Practice:
+- Attach a volume to a container and observe persistence.
+- Create a Docker network and connect containers.
+- Build a docker-compose.yml for:
+  - Node.js + MongoDB
+  - Flask + PostgreSQL
+
+docker-compose up
+
+🎯 Task:
+- Convert an existing project (e.g., MERN stack or NestJS) to use Docker Compose.
+
+## 🧪 Week 4: Debugging, Optimization & Real-world Scenarios
+✅ Goals:
+- Debug, optimize, and use Docker in development workflows.
+
+📚 Topics:
+- Common issues: port conflicts, logs, container restart policies.
+- Multi-stage builds (reduce image size).
+- Docker in CI/CD workflows.
+
+🔧 Practice:
+- Debug with docker logs, exec, inspect.
+- Create a multi-stage Dockerfile.
+- Use .dockerignore properly.
+
+🎯 Task:
+- Optimize an existing Docker image.
+- Set up GitHub Actions to build & push image automatically.
+
+## 🧠 Bonus: Beyond Basics (Optional Week 5)
+📚 Topics:
+- Docker Swarm basics.
+- Intro to Kubernetes (as next step).
+- Security best practices (user permissions, scanning images).
+- BuildKit for faster builds.
+
+## 🛠 Tools & Resources
+- 📘 Docker Docs: https://docs.docker.com/
+- 🎥 FreeCodeCamp Docker Course: https://www.youtube.com/watch?v=3c-iBn73dDE
+- 🧰 Playground: https://labs.play-with-docker.com/
+- 📦 Registry: https://hub.docker.com/
