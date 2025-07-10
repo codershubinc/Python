@@ -5,7 +5,7 @@ from fpdf import FPDF
 
 class PDF(FPDF):
     def header(self):
-        self.set_font("Roboto", "B", 14)
+        self.set_font("Arial", "B", 14)
         self.cell(
             0, 10, "Docker Learning Plan (Beginner to Intermediate)", ln=True, align="C")
         self.ln(5)
@@ -30,6 +30,8 @@ pdf.add_page()
 # Add content
 with open("docker.txt", "r") as file:
     content = file.read()
+    # Print first 100 characters for debugging
+    print("Content read from docker.txt", content[:100])
 
 
 sections = content.split('---')
